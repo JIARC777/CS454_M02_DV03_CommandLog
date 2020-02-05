@@ -4,6 +4,7 @@ using UnityEngine;
 
 public abstract class Command
 {
+    public string name;
     public abstract void Execute();
 }
 
@@ -16,6 +17,7 @@ class MoveLeft: Command
     {
         _player = player;
         _force = force;
+        name = "Move Left";
     }
     public override void Execute()
     {
@@ -34,6 +36,7 @@ class MoveRight: Command
     {
         _player = player;
         _force = force;
+        name = "Move Right";
     }
     public override void Execute()
     {

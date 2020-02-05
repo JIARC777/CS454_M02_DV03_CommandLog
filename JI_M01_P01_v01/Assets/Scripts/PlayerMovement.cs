@@ -60,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown("d"))
         {
-            Debug.Log("Command: Turn Right");
+          //  Debug.Log("Command: Turn Right");
             Command moveRight = new MoveRight(playerRB, xForcePerFrame);
             invoker.SetCommand(moveRight, Time.timeSinceLevelLoad);
         }
@@ -70,7 +70,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (Input.GetKeyDown("a"))
         {
-            Debug.Log("Command: Turn Left");
+          //  Debug.Log("Command: Turn Left");
             Command moveLeft = new MoveLeft(playerRB, xForcePerFrame);
             invoker.SetCommand(moveLeft, Time.timeSinceLevelLoad);
         }
