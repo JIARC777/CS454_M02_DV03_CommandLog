@@ -12,7 +12,7 @@ public class Invoker
     {
         _command = command;
         _startTime = startTime;
-        CommmandLog.log.Enqueue(_command);
+        //CommmandLog.log.Enqueue(_command);
     }
 
     public void ExecuteCommand()
